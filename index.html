@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>صفحة هبوط - اسم المشروع</title>
+  <meta name="description" content="صفحة هبوط احترافية بالعربية - قابل للتخصيص والنشر على GitHub Pages">
+  <link rel="preload" href="assets/fonts/Cairo.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="styles/vendors.css">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="#">اسم المشروع</a>
+      <button id="btn-menu" aria-label="قائمة" class="icon-btn"><img src="assets/icons/menu.svg" alt="قائمة"></button>
+      <nav id="site-nav" class="nav">
+        <a href="#features">المميزات</a>
+        <a href="#pricing">التسعير</a>
+        <a href="#contact">تواصل</a>
+      </nav>
+      <button id="theme-toggle" class="btn">تبديل السمة</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <h1>حلول رقمية ترفع معدل التحويل</h1>
+          <p>صفحة هبوط متجاوبة، مُحسّنة، ومرنة لتوافق العلامة التجارية الخاصة بك.</p>
+          <div class="cta">
+            <a class="btn primary" href="#contact">اطلب عرضاً</a>
+            <a class="btn ghost" href="#pricing">الأسعار</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <img src="assets/images/hero-placeholder.png" alt="معاينة المشروع">
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="section">
+      <div class="container">
+        <h2>مميزات</h2>
+        <div class="grid features-grid">
+          <article class="card">
+            <h3>سرعة</h3>
+            <p>تحميل سريع بملفات مضغوطة وتقليل استدعاءات الشبكة.</p>
+          </article>
+          <article class="card">
+            <h3>تصميم متجاوب</h3>
+            <p>عرض مثالي على الكمبيوتر والجوال.</p>
+          </article>
+          <article class="card">
+            <h3>قابل للتخصيص</h3>
+            <p>قوالب صفحات جاهزة للتعديل السريع.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing" class="section">
+      <div class="container">
+        <h2>الأسعار</h2>
+        <div class="grid pricing-grid">
+          <div class="plan">
+            <h3>أساسي</h3>
+            <strong>99$</strong>
+            <ul><li>صفحة واحدة</li><li>دعم 7 أيام</li></ul>
+            <button class="btn">اختار</button>
+          </div>
+          <div class="plan featured">
+            <h3>متقدم</h3>
+            <strong>249$</strong>
+            <ul><li>صفحات متعددة</li><li>تحسين SEO</li></ul>
+            <button class="btn primary">اختار</button>
+          </div>
+          <div class="plan">
+            <h3>مؤسسي</h3>
+            <strong>499$</strong>
+            <ul><li>تصميم مخصص</li><li>دعم مدى الحياة</li></ul>
+            <button class="btn">اختار</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section contact">
+      <div class="container">
+        <h2>تواصل معنا</h2>
+        <form id="contact-form" class="contact-form">
+          <input name="name" placeholder="الاسم" required>
+          <input name="email" type="email" placeholder="البريد الإلكتروني" required>
+          <textarea name="message" rows="5" placeholder="رسالتك" required></textarea>
+          <button class="btn primary" type="submit">إرسال</button>
+          <div id="form-status" role="status" aria-live="polite"></div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">© <span id="year"></span> اسم المشروع. جميع الحقوق محفوظة.</div>
+  </footer>
+
+  <script src="scripts/main.js" defer></script>
+</body>
+</html>
